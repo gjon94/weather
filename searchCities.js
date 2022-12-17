@@ -1,6 +1,6 @@
 // import Dispatcher from "./dispatcher.js";
 
-class SearchCities extends Dispatcher {
+class SearchCities extends window.weatherCdn.Dispatcher {
   constructor(apyKey) {
     super();
     this.setKey(apyKey);

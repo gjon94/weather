@@ -55,4 +55,4 @@ class Dispatcher {
   }
 }
 
-// export default Dispatcher;
+window.weatherCdn.Dispatcher = Dispatcher;
