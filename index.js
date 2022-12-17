@@ -1,5 +1,5 @@
-import WeatherDispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weather@main/weatherDispatcher.js";
-import SearchCities from "https://cdn.jsdelivr.net/gh/gjon94/weather@main/searchCities.js";
+import WeatherDispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@main/weatherDispatcher.js";
+import SearchCities from "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@main/searchCities.js";
 
 class Search {
   constructor(apyKey) {
