@@ -1,4 +1,4 @@
-import Dispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@main/dispatcher.js";
+import Dispatcher from "./dispatcher.js";
 class WeatherDispatcher extends Dispatcher {
   constructor(apyKey) {
     super();
