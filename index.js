@@ -1,6 +1,6 @@
 // import WeatherDispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@main/weatherDispatcher.js";
 // import SearchCities from "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@main/searchCities.js";
-import WeatherDispatcher from "./weatherDispatcher";
+import WeatherDispatcher from "./weatherDispatcher.js";
 import SearchCities from "./searchCities.js";
 
 class Search {
@@ -24,4 +24,5 @@ class Search {
   }
 }
 
-export default Search;
+// export default Search;
+window.search = () => Search(x);
