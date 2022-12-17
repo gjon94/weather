@@ -1,4 +1,4 @@
-import Dispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weather/dispatcher.js";
+import Dispatcher from "https://cdn.jsdelivr.net/gh/gjon94/weather@main/dispatcher.js";
 class SearchCities extends Dispatcher {
   constructor(apyKey) {
     super();
