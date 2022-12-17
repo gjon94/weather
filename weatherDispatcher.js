@@ -1,4 +1,4 @@
-import Dispatcher from "./dispatcher.js";
+// import Dispatcher from "./dispatcher.js";
 class WeatherDispatcher extends Dispatcher {
   constructor(apyKey) {
     super();
@@ -6,4 +6,4 @@ class WeatherDispatcher extends Dispatcher {
   }
   defaultUrl = `https://api.openweathermap.org/data/2.5/weather?`;
 }
-export default WeatherDispatcher;
+// export default WeatherDispatcher;

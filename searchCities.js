@@ -1,4 +1,4 @@
-import Dispatcher from "./dispatcher.js";
+// import Dispatcher from "./dispatcher.js";
 
 class SearchCities extends Dispatcher {
   constructor(apyKey) {
@@ -8,4 +8,4 @@ class SearchCities extends Dispatcher {
   defaultUrl = `http://api.openweathermap.org/geo/1.0/direct?limit=5`;
 }
 
-export default SearchCities;
+// export default SearchCities;

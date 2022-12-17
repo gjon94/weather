@@ -1,26 +1,14 @@
-import WeatherDispatcher from "./weatherDispatcher.js";
-import SearchCities from "./searchCities.js";
+const urls = [
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/finalClass.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/searchCities.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/weatherDispatcher.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/dispatcher.js",
+];
 
-class Search {
-  constructor(apyKey) {
-    this.apiKey = apyKey;
-    return this.fn();
-  }
+const mainCdn = document.querySelector("#weatherCdn");
 
-  // searchCities() {
-  //   return new SearchCities(this.apiKey);
-  // }
-  // weatherDispatcher(x) {
-  //   return new WeatherDispatcher(this.apiKey).search(x);
-  // }
-
-  fn() {
-    return {
-      WeatherDispatcher: new WeatherDispatcher(this.apiKey),
-      SearchCities: new SearchCities(this.apiKey),
-    };
-  }
-}
-
-// export default Search;
-window.search = Search;
+urls.forEach((element) => {
+  let script = document.createElement("script");
+  script.src = element;
+  mainCdn.parentNode.insertBefore(script, mainCdn.nextSibling);
+});
