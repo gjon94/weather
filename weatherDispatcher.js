@@ -1,4 +1,3 @@
-// import Dispatcher from "./dispatcher.js";
 class WeatherDispatcher extends window.weatherCdn.Dispatcher {
   constructor(apyKey) {
     super();
@@ -6,4 +5,3 @@ class WeatherDispatcher extends window.weatherCdn.Dispatcher {
   }
   defaultUrl = `https://api.openweathermap.org/data/2.5/weather?`;
 }
-// export default WeatherDispatcher;

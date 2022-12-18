@@ -1,6 +1,3 @@
-// import WeatherDispatcher from "./weatherDispatcher.js";
-// import SearchCities from "./searchCities.js";
-
 class Search {
   constructor(apyKey) {
     this.apiKey = apyKey;
@@ -15,5 +12,4 @@ class Search {
   }
 }
 
-// export default Search;
-window.search = Search;
+window.Search = Search;

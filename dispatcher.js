@@ -8,7 +8,6 @@ class Dispatcher {
   /**
    * Methods
    */
-
   setKey(key) {
     if (!key) {
       throw new Error("missed paramete for setting apikey");
