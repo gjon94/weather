@@ -1,8 +1,8 @@
 const urls = [
-  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/finalClass.js",
-  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/searchCities.js",
-  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/weatherDispatcher.js",
-  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@latest/dispatcher.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@f438ecc3049dd6bbfff2405c6003dff528d665e8/finalClass.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@f438ecc3049dd6bbfff2405c6003dff528d665e8/searchCities.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@f438ecc3049dd6bbfff2405c6003dff528d665e8/weatherDispatcher.js",
+  "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@f438ecc3049dd6bbfff2405c6003dff528d665e8/dispatcher.js",
 ];
 window.weatherCdn = {};
 
