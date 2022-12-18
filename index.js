@@ -10,6 +10,7 @@ const mainCdn = document.querySelector("#weatherCdn");
 
 urls.forEach((element) => {
   let script = document.createElement("script");
+  script.onload = function () {};
   script.src = element;
   script.type = "text/javascript";
   script.async = false;
