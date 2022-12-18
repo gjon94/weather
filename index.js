@@ -5,7 +5,7 @@ const urls = [
   "https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@a175df4ac6755d0093c06ee35448ed1a43ee635b/finalClass.js",
 ];
 window.weatherCdn = {};
-
+window.Search = null;
 const mainCdn = document.querySelector("#weatherCdn");
 
 urls.forEach((element) => {
