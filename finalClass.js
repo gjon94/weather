@@ -6,8 +6,8 @@ class Search {
 
   fn() {
     return {
-      WeatherDispatcher: new WeatherDispatcher(this.apiKey),
-      SearchCities: new SearchCities(this.apiKey),
+      WeatherDispatcher: new window.weatherCdn.WeatherDispatcher(this.apiKey),
+      SearchCities: new window.weatherCdn.SearchCities(this.apiKey),
     };
   }
 }
