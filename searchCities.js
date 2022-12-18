@@ -5,3 +5,5 @@ class SearchCities extends window.weatherCdn.Dispatcher {
   }
   defaultUrl = `http://api.openweathermap.org/geo/1.0/direct?limit=5`;
 }
+
+window.weatherCdn.SearchCities = SearchCities;

@@ -5,3 +5,5 @@ class WeatherDispatcher extends window.weatherCdn.Dispatcher {
   }
   defaultUrl = `https://api.openweathermap.org/data/2.5/weather?`;
 }
+
+window.weatherCdn.WeatherDispatcher = WeatherDispatcher;
