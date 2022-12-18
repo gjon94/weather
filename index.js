@@ -11,5 +11,7 @@ const mainCdn = document.querySelector("#weatherCdn");
 urls.forEach((element) => {
   let script = document.createElement("script");
   script.src = element;
+  script.type = "text/javascriptcript";
+  script.async = false;
   mainCdn.parentNode.insertBefore(script, mainCdn.nextSibling);
 });
