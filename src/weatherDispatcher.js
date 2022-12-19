@@ -1,4 +1,5 @@
-class WeatherDispatcher extends window.weatherCdn.Dispatcher {
+import Dispatcher from "./dispatcher";
+class WeatherDispatcher extends Dispatcher {
   constructor(apyKey) {
     super();
     this.setKey(apyKey);
@@ -6,4 +7,4 @@ class WeatherDispatcher extends window.weatherCdn.Dispatcher {
   defaultUrl = `https://api.openweathermap.org/data/2.5/weather?`;
 }
 
-window.weatherCdn.WeatherDispatcher = WeatherDispatcher;
+export default WeatherDispatcher;

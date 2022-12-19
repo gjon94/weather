@@ -30,6 +30,7 @@ class Dispatcher {
     finalResult.result = res.ok;
     finalResult.data = await res.json();
     this.params = "";
+    console.log(finalResult);
     return finalResult;
   }
 
@@ -54,4 +55,4 @@ class Dispatcher {
   }
 }
 
-window.weatherCdn.Dispatcher = Dispatcher;
+export default Dispatcher;

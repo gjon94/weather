@@ -1,4 +1,5 @@
-class SearchCities extends window.weatherCdn.Dispatcher {
+import Dispatcher from "./dispatcher";
+class SearchCities extends Dispatcher {
   constructor(apyKey) {
     super();
     this.setKey(apyKey);
@@ -6,4 +7,4 @@ class SearchCities extends window.weatherCdn.Dispatcher {
   defaultUrl = `http://api.openweathermap.org/geo/1.0/direct?limit=5`;
 }
 
-window.weatherCdn.SearchCities = SearchCities;
+export default SearchCities;
