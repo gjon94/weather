@@ -1,19 +1,13 @@
 import WeatherDispatcher from "./weatherDispatcher";
 import SearchCities from "./searchCities";
-class Search {
-  constructor(apyKey) {
-    this.apiKey = apyKey;
-    return this.fn();
-  }
 
-  fn() {
-    return {
-      weatherDispatcher: new WeatherDispatcher(this.apiKey),
-      searchCities: new SearchCities(this.apiKey),
-    };
-  }
+function search(apiKey) {
+  return {
+    weatherDispatcher: new WeatherDispatcher(apiKey),
+    searchCities: new SearchCities(apiKey),
+  };
 }
-window.search = Search;
+window.search = search;
 // const apikey = "511ea8fab715bf4ad5418687bcca8a10";
 // const { weatherDispatcher, searchCities } = new Search(apikey);
 // console.log(searchCities.search);
