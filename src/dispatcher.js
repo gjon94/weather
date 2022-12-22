@@ -73,7 +73,7 @@ class Dispatcher {
   attachUrlParams(keyValue) {
     const [key, val] = keyValue;
     let haveThisRule = false;
-    this.getRules().forEach((element) => {
+    this.#getRules().forEach((element) => {
       if (element[0] === key) {
         this.params += element[1] + val;
         haveThisRule = true;
@@ -95,7 +95,7 @@ class Dispatcher {
   rules = [];
 
   ///creare funzione per filtrare le nuove rules
-  getRules() {
+  #getRules() {
     return [
       ...this.filterRules(this.#defaultRules),
       ...this.filterRules(this.rules),
@@ -110,6 +110,12 @@ class Dispatcher {
     });
 
     return copyArr;
+  }
+
+  optionsList() {
+    const arr = [...this.#defaultRules, ...this.rules];
+    const newArr = arr.map((el) => el[0]);
+    return newArr;
   }
 }
 

@@ -1,5 +1,5 @@
 import Dispatcher from "./dispatcher.js";
-class WeatherDispatcher extends Dispatcher {
+class CurrentWeather extends Dispatcher {
   defaultUrl = `https://api.openweathermap.org/data/2.5/weather?`;
   rules = [
     ["latitude", "lat"],
@@ -7,4 +7,4 @@ class WeatherDispatcher extends Dispatcher {
   ];
 }
 
-export default WeatherDispatcher;
+export default CurrentWeather;

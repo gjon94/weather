@@ -1,13 +1,13 @@
-import WeatherDispatcher from "./weatherDispatcher.js";
+import CurrentWeather from "./currentWeather.js";
 import SearchCities from "./searchCities.js";
 
-function search(apiKey, objConfig) {
+function weather(apiKey, objConfig) {
   if (!apiKey) {
     throw new Error("missed paramete for setting apikey");
   }
   return {
-    weatherDispatcher: new WeatherDispatcher(apiKey, objConfig),
+    currentWeather: new CurrentWeather(apiKey, objConfig),
     searchCities: new SearchCities(apiKey, objConfig),
   };
 }
-window.search = search;
+window.weather = weather;
