@@ -73,6 +73,7 @@ class Dispatcher {
   attachUrlParams(keyValue) {
     const [key, val] = keyValue;
     let haveThisRule = false;
+    console.log(this.#getRules());
     this.#getRules().forEach((element) => {
       if (element[0] === key) {
         this.params += element[1] + val;
@@ -103,7 +104,8 @@ class Dispatcher {
   }
 
   filterRules(arr) {
-    const copyArr = JSON.parse(JSON.stringify(arr));
+    // const copyArr = JSON.parse(JSON.stringify(arr));
+    const copyArr = this.arrayCopyFn(arr);
     copyArr.forEach((el) => {
       el[1].trim();
       el[1] = `&${el[1]}=`;
@@ -112,6 +114,18 @@ class Dispatcher {
     return copyArr;
   }
 
+  arrayCopyFn(arr) {
+    const clone = [];
+    arr.forEach((element) => {
+      if (Array.isArray(element)) {
+        clone.push(this.arrayCopyFn(element));
+      } else {
+        clone.push(element);
+      }
+    });
+
+    return clone;
+  }
   optionsList() {
     const arr = [...this.#defaultRules, ...this.rules];
     const newArr = arr.map((el) => el[0]);
