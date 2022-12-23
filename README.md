@@ -18,7 +18,7 @@
 ```html
 <head>
   ...
-  <script src="https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@22e124e5c7229c9772e3a4b05aacf619f759aec9/dist/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gjon94/weatherCdn@f7bebd69f6c5c362d5cb2ac84ed610ecd83c0ff1/dist/bundle.js"></script>
 </head>
 ```
 
